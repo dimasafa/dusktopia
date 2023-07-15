@@ -1,0 +1,51 @@
+.login {
+	display: block;
+	height: 420px;
+	width: 600px;
+	background-color: aliceblue;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	top: 25%;
+	border-radius: 42px;
+	&_title {
+/* 		color: #F5F5F5; */
+		color: #000;
+		font-family: 'Aclonica';
+		font-size: 25px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 132.9%;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+	&_form{
+		input {
+			display: block;
+			width: 450px;
+			height: 60px;
+			margin: 0 auto;
+			border-radius: 42px;
+			border: 4px solid #728BAD;
+			margin-top: 40px;
+			padding-left: 30px;
+			font-size: 20px;
+		}
+		button {
+			display: block;
+			height: 50px;
+			width: 150px;
+			border-radius: 42px;
+			background: #728BAD;
+			margin: 50px 0 0 60px;
+			cursor: pointer;
+
+			color: #F5F5F5;
+			font-family: 'Inter';
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+		}
+	}
+}
