@@ -1,12 +1,16 @@
 import './konto.scss';
 import '../../../../fonts/fonts.css';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../../context/AuthContext';
 
 import KontoDaten from '../kontoDaten/KontoDaten';
 import KontoCart from '../kontoCart/KontoCart';
 import KontoOrder from '../kontoOrder/KontoOrder';
 
 const Konto:React.FC = () => {
+
+	const { logout } = useContext(AuthContext);
 
 	const [status, setStatus] = useState(1);
 	const [fontColor1, setFontColor1] = useState({color: 'orange', transition: 'all 0.8s'});
@@ -54,6 +58,10 @@ const Konto:React.FC = () => {
 
 				</div>
 			</div>
+			<Link to="/login">
+				<div className="konto_logout" onClick={logout}>Log Out</div>
+			</Link>
+			
 		</div>
 	);
 };

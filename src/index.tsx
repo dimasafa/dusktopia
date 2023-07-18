@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './frontend/components/App/App';
 
 const root = document.getElementById('root');
@@ -9,4 +9,5 @@ ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  
 );
