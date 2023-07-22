@@ -1,316 +1,740 @@
 @font-face {
-    font-family: 'Aclonica';
-    src: url('Aclonica-Regular.woff2') format('woff2'),
-        url('Aclonica-Regular.woff') format('woff');
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Italic.woff2') format('woff2'),
+        url('TTOctosquaresComp-Italic.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-@font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Thin.woff2') format('woff2'),
-        url('KyivTypeSans-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Black.woff2') format('woff2'),
-        url('KyivTypeSans-Black.woff') format('woff');
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Black.woff2') format('woff2'),
+        url('TTOctosquaresComp-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Regular.woff2') format('woff2'),
-        url('KyivTypeSans-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'TTOctosquares-BoldIt';
+    src: url('TTOctosquares-BoldIt.woff2') format('woff2'),
+        url('TTOctosquares-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Black.woff2') format('woff2'),
+        url('TTOctosquares-Black.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Light.woff2') format('woff2'),
-        url('KyivTypeSans-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
+    font-family: 'TTOctosquaresComp-DBoldIt';
+    src: url('TTOctosquaresComp-DBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-DBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Bold.woff2') format('woff2'),
-        url('KyivTypeSans-Bold.woff') format('woff');
+    font-family: 'TTOctosquaresComp-DBold';
+    src: url('TTOctosquaresComp-DBold.woff2') format('woff2'),
+        url('TTOctosquaresComp-DBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Heavy.woff2') format('woff2'),
-        url('KyivTypeSans-Heavy.woff') format('woff');
+    font-family: 'TTOctosquaresComp-BlackIt';
+    src: url('TTOctosquaresComp-BlackIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-BlackIt.woff') format('woff');
     font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Bold.woff2') format('woff2'),
+        url('TTOctosquares-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'KyivType Sans';
-    src: url('KyivTypeSans-Medium.woff2') format('woff2'),
-        url('KyivTypeSans-Medium.woff') format('woff');
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Bold.woff2') format('woff2'),
+        url('TTOctosquaresComp-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-BoldIt';
+    src: url('TTOctosquaresComp-BoldIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-BlackIt';
+    src: url('TTOctosquares-BlackIt.woff2') format('woff2'),
+        url('TTOctosquares-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Medium.woff2') format('woff2'),
+        url('TTOctosquaresComp-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Bold.woff2') format('woff2'),
-        url('Montserrat-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraLight.woff2') format('woff2'),
-        url('Montserrat-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraBoldItalic.woff2') format('woff2'),
-        url('Montserrat-ExtraBoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Black.woff2') format('woff2'),
-        url('Montserrat-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-LightItalic.woff2') format('woff2'),
-        url('Montserrat-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-BoldItalic.woff2') format('woff2'),
-        url('Montserrat-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Italic.woff2') format('woff2'),
-        url('Montserrat-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraLightItalic.woff2') format('woff2'),
-        url('Montserrat-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-BlackItalic.woff2') format('woff2'),
-        url('Montserrat-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Light.woff2') format('woff2'),
-        url('Montserrat-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraBold.woff2') format('woff2'),
-        url('Montserrat-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ThinItalic.woff2') format('woff2'),
-        url('Montserrat-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Thin.woff2') format('woff2'),
-        url('Montserrat-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Regular.woff2') format('woff2'),
-        url('Montserrat-Regular.woff') format('woff');
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Regular.woff2') format('woff2'),
+        url('TTOctosquaresComp-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-MediumItalic.woff2') format('woff2'),
-        url('Montserrat-MediumItalic.woff') format('woff');
+    font-family: 'TTOctosquaresComp-LightIt';
+    src: url('TTOctosquaresComp-LightIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Light.woff2') format('woff2'),
+        url('TTOctosquaresComp-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-MediumIt';
+    src: url('TTOctosquaresComp-MediumIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-MediumIt.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.woff2') format('woff2'),
-        url('Montserrat-Medium.woff') format('woff');
+    font-family: 'TTOctosquaresComp';
+    src: url('TTOctosquaresComp-Thin.woff2') format('woff2'),
+        url('TTOctosquaresComp-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Thin.woff2') format('woff2'),
+        url('TTOctosquaresCond-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-DBold';
+    src: url('TTOctosquaresCond-DBold.woff2') format('woff2'),
+        url('TTOctosquaresCond-DBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Bold.woff2') format('woff2'),
+        url('TTOctosquaresCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-ThinIt';
+    src: url('TTOctosquaresComp-ThinIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-XLightIt';
+    src: url('TTOctosquaresComp-XLightIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-XLightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-DBoldIt';
+    src: url('TTOctosquaresCond-DBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-DBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Regular.woff2') format('woff2'),
+        url('TTOctosquaresCond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-BlackIt';
+    src: url('TTOctosquaresCond-BlackIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-MediumIt';
+    src: url('TTOctosquaresCond-MediumIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Black.woff2') format('woff2'),
+        url('TTOctosquaresCond-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-LightIt';
+    src: url('TTOctosquaresCond-LightIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-XBold';
+    src: url('TTOctosquaresComp-XBold.woff2') format('woff2'),
+        url('TTOctosquaresComp-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Italic.woff2') format('woff2'),
+        url('TTOctosquaresCond-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Medium.woff2') format('woff2'),
+        url('TTOctosquaresCond-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-SemiBoldItalic.woff2') format('woff2'),
-        url('Montserrat-SemiBoldItalic.woff') format('woff');
+    font-family: 'TTOctosquaresCond-BoldIt';
+    src: url('TTOctosquaresCond-BoldIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-XLight';
+    src: url('TTOctosquaresComp-XLight.woff2') format('woff2'),
+        url('TTOctosquaresComp-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond';
+    src: url('TTOctosquaresCond-Light.woff2') format('woff2'),
+        url('TTOctosquaresCond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresComp-XBoldIt';
+    src: url('TTOctosquaresComp-XBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresComp-XBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-XLight';
+    src: url('TTOctosquaresCond-XLight.woff2') format('woff2'),
+        url('TTOctosquaresCond-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-DBoldIt';
+    src: url('TTOctosquares-DBoldIt.woff2') format('woff2'),
+        url('TTOctosquares-DBoldIt.woff') format('woff');
     font-weight: 600;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-SemiBold.woff2') format('woff2'),
-        url('Montserrat-SemiBold.woff') format('woff');
+    font-family: 'TTOctosquaresCond-ThinIt';
+    src: url('TTOctosquaresCond-ThinIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-XLightIt';
+    src: url('TTOctosquaresCond-XLightIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-XLightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-BlackIt';
+    src: url('TTOctosquaresExp-BlackIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Italic.woff2') format('woff2'),
+        url('TTOctosquaresExp-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-DBold';
+    src: url('TTOctosquaresExp-DBold.woff2') format('woff2'),
+        url('TTOctosquaresExp-DBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresCond-XBoldIt';
+    src: url('TTOctosquaresCond-XBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresCond-XBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-DBold';
+    src: url('TTOctosquares-DBold.woff2') format('woff2'),
+        url('TTOctosquares-DBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Black.woff2') format('woff2'),
-        url('Inter-Black.woff') format('woff');
+    font-family: 'TTOctosquaresCond-XBold';
+    src: url('TTOctosquaresCond-XBold.woff2') format('woff2'),
+        url('TTOctosquaresCond-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-DBoldIt';
+    src: url('TTOctosquaresExp-DBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-DBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-BoldIt';
+    src: url('TTOctosquaresExp-BoldIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Black.woff2') format('woff2'),
+        url('TTOctosquaresExp-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Bold.woff2') format('woff2'),
-        url('Inter-Bold.woff') format('woff');
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Bold.woff2') format('woff2'),
+        url('TTOctosquaresExp-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Medium.woff2') format('woff2'),
-        url('Inter-Medium.woff') format('woff');
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Medium.woff2') format('woff2'),
+        url('TTOctosquaresExp-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-ExtraLight.woff2') format('woff2'),
-        url('Inter-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-Regular.woff2') format('woff2'),
-        url('Inter-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-SemiBold.woff2') format('woff2'),
-        url('Inter-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-ExtraBold.woff2') format('woff2'),
-        url('Inter-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('Inter-Thin.woff2') format('woff2'),
-        url('Inter-Thin.woff') format('woff');
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Thin.woff2') format('woff2'),
+        url('TTOctosquaresExp-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('Inter-Light.woff2') format('woff2'),
-        url('Inter-Light.woff') format('woff');
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Light.woff2') format('woff2'),
+        url('TTOctosquaresExp-Light.woff') format('woff');
     font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-MediumIt';
+    src: url('TTOctosquaresExp-MediumIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-LightIt';
+    src: url('TTOctosquaresExp-LightIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp';
+    src: url('TTOctosquaresExp-Regular.woff2') format('woff2'),
+        url('TTOctosquaresExp-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'TTOctosquares-MediumIt';
+    src: url('TTOctosquares-MediumIt.woff2') format('woff2'),
+        url('TTOctosquares-MediumIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-XBoldIt';
+    src: url('TTOctosquaresExp-XBoldIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-XBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Medium.woff2') format('woff2'),
+        url('TTOctosquares-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-LightIt';
+    src: url('TTOctosquares-LightIt.woff2') format('woff2'),
+        url('TTOctosquares-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Italic.woff2') format('woff2'),
+        url('TTOctosquares-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-XBold';
+    src: url('TTOctosquaresExp-XBold.woff2') format('woff2'),
+        url('TTOctosquaresExp-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Light.woff2') format('woff2'),
+        url('TTOctosquares-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-ThinIt';
+    src: url('TTOctosquaresExp-ThinIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Thin.woff2') format('woff2'),
+        url('TTOctosquares-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-XLightIt';
+    src: url('TTOctosquaresExp-XLightIt.woff2') format('woff2'),
+        url('TTOctosquaresExp-XLightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquaresExp-XLight';
+    src: url('TTOctosquaresExp-XLight.woff2') format('woff2'),
+        url('TTOctosquaresExp-XLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares';
+    src: url('TTOctosquares-Regular.woff2') format('woff2'),
+        url('TTOctosquares-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-XBold';
+    src: url('TTOctosquares-XBold.woff2') format('woff2'),
+        url('TTOctosquares-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-XLight';
+    src: url('TTOctosquares-XLight.woff2') format('woff2'),
+        url('TTOctosquares-XLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-XBoldIt';
+    src: url('TTOctosquares-XBoldIt.woff2') format('woff2'),
+        url('TTOctosquares-XBoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-XLightIt';
+    src: url('TTOctosquares-XLightIt.woff2') format('woff2'),
+        url('TTOctosquares-XLightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTOctosquares-ThinIt';
+    src: url('TTOctosquares-ThinIt.woff2') format('woff2'),
+        url('TTOctosquares-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('NeueMachina-Light.woff2') format('woff2'),
+        url('NeueMachina-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('NeueMachina-Regular.woff2') format('woff2'),
+        url('NeueMachina-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-ExtraBoldItalic.woff2') format('woff2'),
+        url('MazzardH-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-ExtraBold.woff2') format('woff2'),
+        url('MazzardH-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-BlackItalic.woff2') format('woff2'),
+        url('MazzardH-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-Black.woff2') format('woff2'),
+        url('MazzardH-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-BoldItalic.woff2') format('woff2'),
+        url('MazzardH-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-Bold.woff2') format('woff2'),
+        url('MazzardH-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('MazzardH-ExtraLight.woff2') format('woff2'),
+        url('MazzardH-ExtraLight.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }

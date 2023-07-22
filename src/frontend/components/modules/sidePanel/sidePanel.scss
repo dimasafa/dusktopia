@@ -1,0 +1,36 @@
+.sidepanel {
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: auto;
+	left: -50px;
+	top: 410px;
+	&_menu {
+		transform: rotate(90deg);
+
+		font-family: 'Neue Machina';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 140%;
+		color: rgba(255, 255, 255, 0.70);
+		width: 391px;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			padding: 0;
+			li {
+				margin-right: 39px;
+				cursor: pointer;
+				img {
+					margin-top: 5px;
+					cursor: auto;
+				}
+			}
+		}
+		&_active {
+			color: #fff;
+		}
+	}
+}

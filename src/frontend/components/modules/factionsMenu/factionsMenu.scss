@@ -1,0 +1,68 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.menu {
+	display: flex;
+	margin-top: 140px;
+	justify-content: end;
+	margin-right: 100px;
+	&_left {
+		margin-top: 35px;
+		&_blockOne, &_blockTwo, &_blockThree, &_blockFour {
+			position: relative;
+			color: #FFF;
+			text-align: right;
+			font-family: 'TTOctosquares';
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 140%;
+			
+			margin-right: 20px;
+			margin-bottom: 109px;
+			
+			transition: height 0.7s ease;
+			&_bild, &_button {
+				transition: height 0.7s ease;
+			}
+			&_bild {
+				margin-top: 20px;
+				margin-bottom: 23px;
+			}
+
+			&_button {
+				position: absolute;
+				top: 80px;
+				left: -60px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&_right {
+		position: relative;
+		img {
+			cursor: pointer;
+			transform: scale(0.7);
+		}
+		&_lineOne, &_lineTwo, &_lineThree {
+			
+			display: block;
+			width: 7px;
+			height: 80px;
+			background-color: #fff;
+			margin-left: 35px;
+			margin-top: -26px;
+			margin-bottom: -25px;
+		}
+		&_lineOne {
+			transition: all 0.3s;
+			height: 180px;
+		}
+		&_knofpTwo, &_knofpFour {
+			margin-left: -5px;
+		}
+	}
+}

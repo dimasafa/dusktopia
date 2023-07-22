@@ -6,6 +6,7 @@
 .pnp.js
 /src/backend/node_modules
 /src/backend/.env
+/.vscode
 
 # testing
 /coverage
