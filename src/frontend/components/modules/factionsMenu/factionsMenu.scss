@@ -24,6 +24,9 @@ $size-border: 2px;
 			margin-bottom: 109px;
 			
 			transition: height 0.7s ease;
+			&_title {
+				cursor: pointer;
+			}
 			&_bild, &_button {
 				transition: height 0.7s ease;
 			}
@@ -57,7 +60,7 @@ $size-border: 2px;
 			margin-top: -26px;
 			margin-bottom: -25px;
 		}
-		&_lineOne {
+		&_lineOne, &_lineTwo, &_lineThree {
 			transition: all 0.3s;
 			height: 180px;
 		}

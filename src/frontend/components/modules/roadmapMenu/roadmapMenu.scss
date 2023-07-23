@@ -1,0 +1,237 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.menu {
+	display: flex;
+	margin-top: 100px;
+	margin-left: 100px;
+	background: none;
+	
+	&_left {
+		margin-top: 30px;
+		img {
+			cursor: pointer;
+			transform: scale(0.7);
+		}
+		&_lineOne, &_lineTwo, &_lineThree, &_lineFour, &_lineFive {
+			display: block;
+			width: 7px;
+			height: 150px;
+			background-color: #fff;
+			margin-left: 35px;
+			margin-top: -26px;
+			margin-bottom: -25px;
+		}
+	}
+	&_right {
+		&_buttonOne, &_buttonTwo, &_buttonThree, &_buttonFour, &_buttonFive {
+			position: relative;
+			height: 120px;
+			width: 400px;
+			
+			color: white;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+	
+			border: none;
+			box-shadow: none;
+			background: none;
+			padding: 1.4286rem 1.7857rem 1.1429rem;
+			transition: all 0.3s;
+			cursor: pointer;
+			
+			margin-bottom: 50px;
+			margin-left: 10px;
+
+			backdrop-filter: blur(16.924753189086914px);
+			
+			&_body {
+				position: relative;
+				display: block;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				z-index: 2;
+				margin-bottom: 20px;
+				&_num {
+					font-size: 45px;
+					font-family: 'Neue Machina';
+					font-style: normal;
+					font-weight: 700;
+					line-height: 140%;
+					text-align: left;
+					margin-top: -10px;
+				}
+				&_header {
+					font-family: 'Mazzard';
+					font-size: 15px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 140%;
+					text-align: left;
+				}
+				&_text {
+					font-family: 'Mazzard';
+					font-size: 15px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%;
+					text-align: left;
+				}
+			}
+	
+			&_tr1,
+			&_tr2 {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				border-top: 17px solid white;
+				border-right: 17px solid transparent;
+				transition: all 0.3s;
+				
+			}
+	
+			&_tr1 {
+				margin-top: -14px;
+				margin-left: -22px;
+				transform: rotate(270deg);
+			}
+	
+			&_tr2 {
+				margin-top: -141px;
+				margin-left: 406px;
+				transform: rotate(90deg);
+			}
+	
+			&:hover {
+				&::after {
+					background: white;
+				}
+	
+				.menu_right_buttonOne_body, .menu_right_buttonTwo_body, .menu_right_buttonThree_body, .menu_right_buttonFour_body, .menu_right_buttonFive_body {
+					color: black;
+				}
+	
+				.menu_right_buttonOne_tr1, .menu_right_buttonTwo_tr1, .menu_right_buttonThree_tr1, .menu_right_buttonFour_tr1, .menu_right_buttonFive_tr1 {
+					border-top-color: black;
+				}
+	
+				.menu_right_buttonOne_tr2, .menu_right_buttonTwo_tr2, .menu_right_buttonThree_tr2, .menu_right_buttonFour_tr2, .menu_right_buttonFive_tr2 {
+					border-top-color: black;
+				}
+			}
+	
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				transition: all 0.3s;
+				transform: scaleX(-1);
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+	
+						0 calc(100% - $size-border - $size-height),
+						calc($size-top + 1px) calc(100% - $size-border - $size-height),
+						calc($size-bottom + 1px) calc(100% - $size-border),
+						calc(100% - $size-border) calc(100% - $size-border),
+						calc(100% - $size-border) $size-border,
+						calc(100% - $size-top + $size-border - 1px) calc($size-border),
+						calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+						$size-border calc($size-height + $size-border),
+						$size-border calc(100% - $size-border - $size-height),
+						0 calc(100% - $size-border - $size-height));
+				background: white;
+			}
+	
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				z-index: 0;
+				transition: all 0.3s;
+				transform: scaleX(-1);
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+					);
+			}
+	
+		}
+		&_buttonOne {
+			&_body {
+				&_gradient {
+					position: absolute;
+					top: -5px;
+					right: -26px;
+					z-index: -20;
+				}
+			}
+		}
+		&_buttonTwo {
+			&_body {
+				&_gradient {
+					position: absolute;
+					top: -13px;
+					left: -20px;
+					z-index: -20;
+				}
+			}
+		}
+		&_buttonThree {
+			&_body {
+				&_gradient {
+					position: absolute;
+					top: -5px;
+					left: 40px;
+					z-index: -20;
+
+				}
+			}
+		}
+		&_buttonFour {
+			&_body {
+				&_gradient {
+					position: absolute;
+					top: -5px;
+					left: -30px;
+					z-index: -20;
+				}
+			}
+		}
+		&_buttonFive {
+			&_body {
+				&_gradient {
+					position: absolute;
+					top: -13px;
+					left: -30px;
+					z-index: -20;
+				}
+			}
+		}
+	}
+}

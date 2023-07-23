@@ -14,6 +14,9 @@ import bild_3 from '../../../resources/factionMenu/bild_3.jpg';
 import bild_4 from '../../../resources/factionMenu/bild_4.jpg';
 
 import buttenOne from '../../../resources/factionMenu/btnOne.png';
+import buttenTwo from '../../../resources/factionMenu/btnTwo.png';
+import buttenThree from '../../../resources/factionMenu/btnThree.png';
+import buttenFour from '../../../resources/factionMenu/btnFour.png';
 
 
 const FactionsMenu:React.FC = () => {
@@ -31,22 +34,30 @@ const FactionsMenu:React.FC = () => {
 		margin: { marginBottom: '109px' }
 	});
 	const [bildDisplayTwo, setBildDisplayTwo] = useState({ 
+		tltle: { textTransform: '' },
 		img: { display: 'none' },
 		btn: { display: 'none' },
-		line: { height: '80px' }
+		line: { height: '80px' },
+		margin: { marginBottom: '109px' }
 	});
 	const [bildDisplayThree, setBildDisplayThree] = useState({ 
+		tltle: { textTransform: '' },
 		img: { display: 'none' },
 		btn: { display: 'none' },
-		line: { height: '80px' }
+		line: { height: '80px' },
+		margin: { marginBottom: '109px' }
 	});
 	const [bildDisplayFour, setBildDisplayFour] = useState({ 
+		tltle: { textTransform: '' },
 		img: { display: 'none' },
 		btn: { display: 'none' },
 	});
 
 	const clickOne = () => {
 		setBtnOne(colorLeft);
+		setBtnTwo(whiteRight);
+		setBtnThree(whiteLeft);
+		setBtnFour(whiteRight);
 
 		setBildDisplayOne({
 			tltle: { textTransform: 'uppercase' },
@@ -54,6 +65,139 @@ const FactionsMenu:React.FC = () => {
 			btn: { display: 'block' },
 			line: { height: '200px' },
 			margin: { marginBottom: '0px' }
+		});
+
+		setBildDisplayTwo({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayThree({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayFour({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+		});
+	}
+
+	const clickTwo = () => {
+		setBtnOne(whiteLeft);
+		setBtnTwo(colorRight);
+		setBtnThree(whiteLeft);
+		setBtnFour(whiteRight);
+
+		setBildDisplayOne({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayTwo({
+			tltle: { textTransform: 'uppercase' },
+			img: { display: 'block' },
+			btn: { display: 'block' },
+			line: { height: '200px' },
+			margin: { marginBottom: '0px' }
+		});
+
+		setBildDisplayThree({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayFour({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+		});
+	}
+
+	const clickThree = () => {
+		setBtnOne(whiteLeft);
+		setBtnTwo(whiteRight);
+		setBtnThree(colorLeft);
+		setBtnFour(whiteRight);
+
+		setBildDisplayOne({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayTwo({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayThree({
+			tltle: { textTransform: 'uppercase' },
+			img: { display: 'block' },
+			btn: { display: 'block' },
+			line: { height: '200px' },
+			margin: { marginBottom: '0px' }
+		});
+
+		setBildDisplayFour({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+		});
+	}
+
+	const clickFour = () => {
+		setBtnOne(whiteLeft);
+		setBtnTwo(whiteRight);
+		setBtnThree(whiteLeft);
+		setBtnFour(colorRight);
+
+		setBildDisplayOne({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayTwo({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayThree({
+			tltle: { textTransform: '' },
+			img: { display: 'none' },
+			btn: { display: 'none' },
+			line: { height: '80px' },
+			margin: { marginBottom: '109px' }
+		});
+
+		setBildDisplayFour({
+			tltle: { textTransform: 'uppercase' },
+			img: { display: 'block' },
+			btn: { display: 'block' },
 		});
 	}
 
@@ -66,39 +210,36 @@ const FactionsMenu:React.FC = () => {
 					<img src={buttenOne} alt="ButtenMore" style={bildDisplayOne.btn} className="menu_left_blockOne_button">
 					</img>
 				</div>
-				<div className="menu_left_blockTwo">
-					<div className="menu_left_blockTwo_title">Glacial Frontier</div>
+				<div style={bildDisplayTwo.margin} className="menu_left_blockTwo">
+					<div onClick={clickTwo} style={bildDisplayTwo.tltle as CSSProperties} className="menu_left_blockTwo_title">Glacial Frontier</div>
 					<img style={bildDisplayTwo.img} className='menu_left_blockTwo_bild' src={bild_2} alt="bildGlacial" />
-					<div style={bildDisplayTwo.btn} className="menu_left_blockTwo_button">
-						<span className="menu_left_blockTwo_button_body">More</span>
-					</div>
+					<img src={buttenTwo} alt="ButtenMore" style={bildDisplayTwo.btn} className="menu_left_blockTwo_button">
+					</img>
 				</div>
-				<div className="menu_left_blockThree">
-					<div className="menu_left_blockThree_title">Sundered Grove</div>
+				<div  style={bildDisplayThree.margin} className="menu_left_blockThree">
+					<div onClick={clickThree} style={bildDisplayThree.tltle as CSSProperties}className="menu_left_blockThree_title">Sundered Grove</div>
 					<img style={bildDisplayThree.img} className='menu_left_blockThree_bild' src={bild_3} alt="bildSundered" />
-					<div style={bildDisplayThree.btn} className="menu_left_blockThree_button">
-						<span className="menu_left_blockThree_button_body">More</span>
-					</div>
+					<img src={buttenThree} alt="ButtenMore" style={bildDisplayThree.btn} className="menu_left_blockThree_button">
+					</img>
 				</div>
 				<div className="menu_left_blockFour">
-					<div className="menu_left_blockFour_title">Sky Citadel</div>
+					<div onClick={clickFour} style={bildDisplayFour.tltle as CSSProperties} className="menu_left_blockFour_title">Sky Citadel</div>
 					<img style={bildDisplayFour.img} className='menu_left_blockFour_bild' src={bild_4} alt="bildSky" />
-					<div style={bildDisplayFour.btn} className="menu_left_blockFour_button">
-						<span className="menu_left_blockFour_button_body">More</span>
-					</div>
+					<img src={buttenFour} alt="ButtenMore" style={bildDisplayFour.btn} className="menu_left_blockFour_button">
+					</img>
 				</div>
 			</div>
 			<div className="menu_right">
 				<img onClick={clickOne} className="menu_right_knofpOne" src={btnOne} alt="buttonOne" />
 				<div style={bildDisplayOne.line} className="menu_right_lineOne"></div>
 
-				<img className="menu_right_knofpTwo" src={btnTwo} alt="buttonTwo" />
+				<img onClick={clickTwo} className="menu_right_knofpTwo" src={btnTwo} alt="buttonTwo" />
 				<div style={bildDisplayTwo.line} className="menu_right_lineTwo"></div>
 
-				<img className="menu_right_knofpThree" src={btnThree} alt="buttonThree" />
+				<img onClick={clickThree} className="menu_right_knofpThree" src={btnThree} alt="buttonThree" />
 				<div style={bildDisplayThree.line} className="menu_right_lineThree"></div>
 
-				<img className="menu_right_knofpFour" src={btnFour} alt="buttonFour" />
+				<img onClick={clickFour} className="menu_right_knofpFour" src={btnFour} alt="buttonFour" />
 			</div>
 		</div>
 	)
