@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 import './App.scss';
-import Menu from '../modules/faq/Faq';
+import Menu from '../modules/more/More';
 
 function App() {
 

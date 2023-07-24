@@ -1,0 +1,196 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.more {
+	display: block;
+	width: 100vw;
+	height: auto;
+	background: url('../../../resources/more/bg01.png') center center/cover no-repeat;
+	position: relative;
+	&_buttonBox {
+		display: flex;
+		width: 80%;
+		justify-content: space-between;
+		margin-left: calc(20% / 2);
+		&_buttonLeft, &_buttonRight {
+			position: relative;
+			height: 15px;
+			width: 80px;
+			margin-top: 55px;
+		
+			font-family: 'Neue Machina';
+			color: white;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+		
+			border: none;
+			box-shadow: none;
+			padding: 1.4286rem 1.7857rem 1.1429rem;
+			transition: all 0.3s;
+			cursor: pointer;
+
+
+			
+			&_body {
+				display: flex;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				z-index: 2;
+			}
+		
+		
+			&:hover {
+
+				&::after {
+					background: white;
+				}
+		
+				.more_buttonBox_buttonLeft_body, .more_buttonBox_buttonRight_body {
+					color: black;
+				}
+
+			}
+		
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+		
+						0 calc(100% - $size-border - $size-height),
+						calc($size-top + 1px) calc(100% - $size-border - $size-height),
+						calc($size-bottom + 1px) calc(100% - $size-border),
+						calc(100% - $size-border) calc(100% - $size-border),
+						calc(100% - $size-border) $size-border,
+						calc(100% - $size-top + $size-border - 1px) calc($size-border),
+						calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+						$size-border calc($size-height + $size-border),
+						$size-border calc(100% - $size-border - $size-height),
+						0 calc(100% - $size-border - $size-height));
+				background: white;
+			}
+		
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				z-index: 0;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+					);
+			}
+		}
+	}
+	&_buttonBox {
+		&_buttonRight {
+			display: flex;
+			img {
+				margin-left: 13px;
+				filter: invert(100%);
+				z-index: 5;
+			}
+			
+				&:hover {
+					img {
+						filter: invert(0%);
+					}
+				}
+		}
+	}
+
+	&_info {
+		display: block;
+		text-align: left;
+		margin-left: 10%;
+		margin-top: 120px;
+		&_text {
+			margin-top: 60px;
+			color: #FFF;
+			font-family: 'Neue Machina';
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+			width: 770px;
+			text-transform: uppercase;
+		}
+	}
+	&_itemBox {
+		display: flex;
+		margin-left: 10%;
+		margin-top: 100px;
+		height: 650px;
+		overflow: hidden;
+		overflow-y: auto;
+		&_lineOne, &_lineTwo, &_lineThree, &_lineFour {
+			margin-right: 30px;
+			&_itemOne, &_itemTwo, &_itemThree, &_itemFour {
+				display: flex;
+				width: 270px;
+				height: 260px;
+				justify-content: center;
+				align-items: center;
+				background: rgba(255, 255, 255, 0.20);
+				backdrop-filter: blur(23px);
+				margin-bottom: 30px;
+				border: 1px solid rgb(168, 168, 168);
+				cursor: pointer;
+
+			}
+		}
+		&_lineTwo, &_lineFour {
+			margin-top: 76px;
+		}
+	}
+	&_scrollbox {
+		display: block;
+		position: absolute;
+		height: 450px;
+		width: 35px;
+		top: 600px;
+		right: 90px;
+		
+		&_button {
+			cursor: pointer;
+		}
+		&_line {
+			display: block;
+			height: 400px;
+			width: 3px;
+			background-color: #A7A7A7;
+			margin-top: -10px;
+			margin-left: 16.5px;
+		}
+	}
+}

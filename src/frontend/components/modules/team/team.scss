@@ -1,0 +1,351 @@
+$size-height: 0.3571rem;
+$size-top: 1.8571rem;
+$size-bottom: 2.4286rem;
+$size-border: 2px;
+
+.team {
+	display: flex;
+	height: 701px;
+	width: 1324px;
+/* 	background-color: rgb(19, 145, 145); */
+	margin-left: auto;
+	overflow: hidden;
+	&_active {
+		&_box {
+			position: relative;
+			height: 660px;
+			width: 415px;
+	
+			font-family: 'Neue Machina';
+			color: white;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+	
+			border: none;
+			box-shadow: none;
+			background: none;
+			padding: 1.4286rem 1.7857rem 1.1429rem;
+			transition: all 0.3s;
+			cursor: pointer;
+			
+			&_body {
+				display: block;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				z-index: 2;
+				&_bild {
+					margin-bottom: 15px;
+					img {
+						margin-left: -10px;
+						width: 103%;
+					}
+				}
+				&_text {
+					color: #000;
+					font-family: 'Mazzard';
+					font-size: 13px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%;
+					text-align: left;
+				}
+				&_name {
+					color: #000;
+					font-family: 'TTOctosquares';
+					font-size: 35px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 117.8%;
+					text-transform: uppercase;
+					text-align: left;
+				}
+			}
+	
+			&_tr1,
+			&_tr2 {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				border-top: 15px solid black;
+				border-right: 15px solid transparent;
+				transition: all 0.3s;
+	
+			}
+	
+			&_tr1 {
+				margin-top: -670px;
+				margin-left: -23px;
+			}
+	
+			&_tr2 {
+				margin-top: -95px;
+				margin-left: 420px;
+				transform: rotate(180deg);
+			}
+			&_gradient {
+				position: absolute;
+				top: 5px;
+				right: 0;
+				z-index: 1;
+			}
+
+	
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+	
+						0 calc(100% - $size-border - $size-height),
+						calc($size-top + 1px) calc(100% - $size-border - $size-height),
+						calc($size-bottom + 1px) calc(100% - $size-border),
+						calc(100% - $size-border) calc(100% - $size-border),
+						calc(100% - $size-border) $size-border,
+						calc(100% - $size-top + $size-border - 1px) calc($size-border),
+						calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+						$size-border calc($size-height + $size-border),
+						$size-border calc(100% - $size-border - $size-height),
+						0 calc(100% - $size-border - $size-height));
+				background: white;
+				transform: scaleX(-1);
+			}
+	
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				z-index: 0;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+					);
+				transform: scaleX(-1);
+				background: white;
+			}
+	
+		}
+	}
+
+	&_first, &_second, &_third {
+		&_box {
+			position: relative;
+			height: 410px;
+			width: 220px;
+			margin-left: 32px;
+
+			font-family: 'Neue Machina';
+			color: white;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+
+			border: none;
+			box-shadow: none;
+			padding: 1.4286rem 1.7857rem 1.1429rem;
+			transition: all 0.3s;
+			cursor: pointer;
+
+			background: linear-gradient(218deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.15) 100%);
+			backdrop-filter: blur(16.924753189086914px);
+
+			&_body {
+				display: block;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				z-index: 2;
+
+				&_bild {
+					margin-bottom: 13px;
+
+					img {
+						margin-left: -18px;
+						width: 115%;
+					}
+				}
+
+				&_text {
+					color: #FFF;
+					font-family: 'Mazzard';
+					font-size: 8px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 140%;
+					text-align: left;
+				}
+
+				&_name {
+					color: #FFF;
+					font-family: 'TTOctosquares';
+					font-size: 21px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 117.8%;
+					text-transform: uppercase;
+					text-align: left;
+					margin-top: 5;
+				}
+			}
+
+			&_tr1,
+			&_tr2 {
+				display: block;
+				position: absolute;
+				z-index: 1;
+				border-top: 10px solid rgb(255, 255, 255);
+				border-right: 10px solid transparent;
+				transition: all 0.3s;
+
+			}
+
+			&_tr1 {
+				margin-top: -425px;
+				margin-left: -23px;
+			}
+
+			&_tr2 {
+				margin-top: -70px;
+				margin-left: 235px;
+				transform: rotate(180deg);
+			}
+
+			&_gradient {
+				position: absolute;
+				top: 5px;
+				right: 0;
+				z-index: 1;
+			}
+
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+
+						0 calc(100% - $size-border - $size-height),
+						calc($size-top + 1px) calc(100% - $size-border - $size-height),
+						calc($size-bottom + 1px) calc(100% - $size-border),
+						calc(100% - $size-border) calc(100% - $size-border),
+						calc(100% - $size-border) $size-border,
+						calc(100% - $size-top + $size-border - 1px) calc($size-border),
+						calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+						$size-border calc($size-height + $size-border),
+						$size-border calc(100% - $size-border - $size-height),
+						0 calc(100% - $size-border - $size-height));
+				/* background: white; */
+				transform: scaleX(-1);
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				z-index: 0;
+				transition: all 0.3s;
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+					);
+				transform: scaleX(-1);
+				/* background: white; */
+			}
+
+		}
+	}
+	&_text {
+		position: absolute;
+		display: block;
+		width: 543px;
+		height: 192px;
+		backdrop-filter: blur(91.5px);
+		stroke-width: 2px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+		border: #cacaca solid 2px;
+		top: 500.5px;
+		left: 838px;
+		padding-left: 120px;
+		border-bottom-right-radius: 30px;
+		
+		&_text {
+			width: 487px;
+			color: #FFF;
+			font-family: 'Mazzard';
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%;
+			text-align: left;
+			margin-left: -50px;
+			margin-top: 45px;
+			span {
+				font-weight: 700;
+			}
+		}
+	}
+	&_stamp {
+		position: absolute;
+		top: 150px;
+		left: 1400px;
+		z-index: 2;
+		pointer-events: none;
+	}
+	&_star {
+		position: absolute;
+		top: 485px;
+		left: 1340px;
+	}
+}
