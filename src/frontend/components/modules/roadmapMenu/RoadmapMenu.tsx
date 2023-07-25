@@ -38,8 +38,12 @@ import five03 from '../../../resources/roadMap/05_03.png';
 import five04 from '../../../resources/roadMap/05_04.png'; 
 import five05 from '../../../resources/roadMap/05_05.png'; 
 
+interface RoadmapMenuProps {
+	onChangeState: (newZahl: number) => void;
+}
 
-const RoadmapMenu:React.FC = () => {
+
+const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 
 	const [btnOne, setBtnOne] = useState(whiteLeft);
 	const [btnTwo, setBtnTwo] = useState(whiteRight);
@@ -81,6 +85,8 @@ const RoadmapMenu:React.FC = () => {
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
 
+		onChangeState(1);
+
 		setDisplayOne({
 			menuScale: { transform: 'scale(1.1)', marginLeft:'23px' },
 			gradPosition: { top: '', left: ''},
@@ -114,6 +120,7 @@ const RoadmapMenu:React.FC = () => {
 		setBtnThree(whiteLeft);
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
+		onChangeState(2);
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -149,6 +156,7 @@ const RoadmapMenu:React.FC = () => {
 		setBtnThree(colorLeft);
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
+		onChangeState(3);
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -184,6 +192,7 @@ const RoadmapMenu:React.FC = () => {
 		setBtnThree(whiteLeft);
 		setBtnFour(colorRight);
 		setBtnFive(whiteLeft);
+		onChangeState(4);
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -219,6 +228,7 @@ const RoadmapMenu:React.FC = () => {
 		setBtnThree(whiteLeft);
 		setBtnFour(whiteRight);
 		setBtnFive(colorLeft);
+		onChangeState(5);
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },

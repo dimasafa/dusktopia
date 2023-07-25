@@ -316,7 +316,7 @@ $size-border: 2px;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
 		border: #cacaca solid 2px;
 		top: 500.5px;
-		left: 838px;
+		left: 1007px;
 		padding-left: 120px;
 		border-bottom-right-radius: 30px;
 		
@@ -339,13 +339,13 @@ $size-border: 2px;
 	&_stamp {
 		position: absolute;
 		top: 150px;
-		left: 1400px;
+		left: 1570px;
 		z-index: 2;
 		pointer-events: none;
 	}
 	&_star {
 		position: absolute;
 		top: 485px;
-		left: 1340px;
+		left: 1540px;
 	}
 }

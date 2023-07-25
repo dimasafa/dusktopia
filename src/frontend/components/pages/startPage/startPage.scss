@@ -1,0 +1,9 @@
+.startPage {
+	display: block;
+	background: url('../../../resources//startPage/bg.png') center center/cover no-repeat;
+	height: 100vh;
+
+	&_content {
+		margin-top: 145px;
+	}
+}

@@ -1,0 +1,7 @@
+export const textFirstPage = `Modern-day Dusktopia begins here <br></br> The first thing that counts here is survival Only then can you think of profit; then finally domination <br></br> Forge your alliances with the EON Corporation, the rival mafia gangs, or even an utterly corrupt police force - and crush all standing in your way`;
+
+export const textSecondPage = `The home of everything warfare in Dusktopia  <br></br> Mercenaries and soldiers take payouts from the Cabal to do its bidding - but some want more for themselves, and are willing to go against power itself to get it  <br></br> Which side are you joining? `;
+
+export const textThirdPage = `Dusktopia’s last remaining sanctuary of peace <br></br><br></br> Researchers and scientists congregate here to live in religious pacifism, spending their time developing a renewable energy source for the world <br></br> A small faction wants more - selling Aurium on the black market for their own personal gain <br></br> Will you root out the traitors or join them?`;
+
+export const textFourPage = `These are where the apex predators in Dusktopia reside <br></br> The political and economic masters of all society: living high above the suffering of ordinary denizens, and calmly plot elevated pursuits like space colonization in absolute peace <br></br> If you’re lucky enough to be part of it, hold on tight - everybody wants what you have`

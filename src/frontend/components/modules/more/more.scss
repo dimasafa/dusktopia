@@ -7,7 +7,9 @@ $size-border: 2px;
 	display: block;
 	width: 100vw;
 	height: auto;
-	background: url('../../../resources/more/bg01.png') center center/cover no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: relative;
 	&_buttonBox {
 		display: flex;
@@ -32,9 +34,6 @@ $size-border: 2px;
 			padding: 1.4286rem 1.7857rem 1.1429rem;
 			transition: all 0.3s;
 			cursor: pointer;
-
-
-			
 			&_body {
 				display: flex;
 				width: 100%;
@@ -44,8 +43,6 @@ $size-border: 2px;
 				position: relative;
 				z-index: 2;
 			}
-		
-		
 			&:hover {
 
 				&::after {
@@ -151,8 +148,10 @@ $size-border: 2px;
 		margin-left: 10%;
 		margin-top: 100px;
 		height: 650px;
+		width: 64%;
 		overflow: hidden;
 		overflow-y: auto;
+
 		&_lineOne, &_lineTwo, &_lineThree, &_lineFour {
 			margin-right: 30px;
 			&_itemOne, &_itemTwo, &_itemThree, &_itemFour {
@@ -173,24 +172,28 @@ $size-border: 2px;
 			margin-top: 76px;
 		}
 	}
+	::-webkit-scrollbar {
+		display: none;
+	}
 	&_scrollbox {
 		display: block;
 		position: absolute;
 		height: 450px;
 		width: 35px;
 		top: 600px;
-		right: 90px;
-		
+		right: 150px;
 		&_button {
 			cursor: pointer;
+			position: absolute;
+
 		}
 		&_line {
 			display: block;
 			height: 400px;
 			width: 3px;
 			background-color: #A7A7A7;
-			margin-top: -10px;
-			margin-left: 16.5px;
+			margin-top: 30px;
+			margin-left: 15.5px;
 		}
 	}
 }
