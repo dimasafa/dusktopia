@@ -1,11 +1,9 @@
 import './menu.scss';
 import '../../../fonts/fonts.css';
 
-import logo from '../../../resources/menu/logo.png';
-import discord from '../../../resources/menu/discord.png';
-import twitter from '../../../resources/menu/twitter.png';
-import medium from '../../../resources/menu/medium.png';
+import { Link } from 'react-router-dom'
 
+import { logo, discord, twitter, medium } from './menuImagePath';
 
 const Menu:React.FC = () => {
 	return(
@@ -19,11 +17,14 @@ const Menu:React.FC = () => {
 					<img src={twitter} alt="twitter" />
 					<img src={medium} className="menu_right_icon_3" alt="medium" />
 				</div>
-				<div className="menu_right_button">
-					<span className="menu_right_button_body">Whitepaper</span>
-					<span className="menu_right_button_tr1"></span>
-					<span className="menu_right_button_tr2"></span>
-				</div>
+				<Link to="/faction">
+					<div className="menu_right_button">
+						<span className="menu_right_button_body">Whitepaper</span>
+						<span className="menu_right_button_tr1"></span>
+						<span className="menu_right_button_tr2"></span>
+					</div>
+				</Link>
+
 			</div>
 		</div>
 	)

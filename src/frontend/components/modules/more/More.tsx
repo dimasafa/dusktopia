@@ -2,6 +2,7 @@ import './more.scss';
 import '../../../fonts/fonts.css';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import { textFirstPage, textSecondPage, textThirdPage, textFourPage } from './moreVariables';
 
@@ -10,7 +11,10 @@ import { button, buttonwhite, arrow, titleOne, titleTwo, titleThree, titleFour, 
 import { ScrollbarRefs } from './moreInterfaces';
 
 
-const More:React.FC = () => {
+const More:React.FC = (props) => {
+	const location = useLocation();
+	const activeMore = location.state?.activeMore;
+
 	const [posOne, setPosOne] = useState(itemOne01);
 	const [posTwo, setPosTwo] = useState(itemOne02);
 	const [posThree, setPosThree] = useState(itemOne03);
@@ -99,6 +103,10 @@ const More:React.FC = () => {
 		nextPageFinish();
 	}, [activePage]);
 
+	useEffect(() => {
+		setActivePage(activeMore);
+	}, [activeMore])
+
 
 	const [buttonPosition, setButtonPosition] = useState(0);
 	const [isDragging, setIsDragging] = useState(false);
@@ -156,9 +164,12 @@ const More:React.FC = () => {
 	return(
 		<div className="more" style={activeBg.background}>
 			<div className="more_buttonBox">
-				<div className="more_buttonBox_buttonLeft">
-					<span className="more_buttonBox_buttonLeft_body">Close</span>
-				</div>
+				<Link to='/faction'>
+					<div className="more_buttonBox_buttonLeft">
+						<span className="more_buttonBox_buttonLeft_body">Close</span>
+					</div>
+				</Link>
+
 				<div className="more_buttonBox_buttonRight" onClick={nextPageStart} >
 					<span className="more_buttonBox_buttonRight_body">Next</span>
 					<img className="more_buttonBox_buttonRight_img" src={arrow} alt="arrow" />

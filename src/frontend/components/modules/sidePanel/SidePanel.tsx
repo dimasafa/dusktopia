@@ -3,10 +3,14 @@ import '../../../fonts/fonts.css';
 
 import star from '../../../resources/sidePanel/stern.png';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
+interface IActivePage {
+	activePage: number;
+}
 
-const SidePanel:React.FC = () => {
+const SidePanel:React.FC<IActivePage> = ({activePage}) => {
 
 	const [home, setHome] = useState('sidepanel_menu_active');
 	const [factions, setFactions] = useState('');
@@ -23,6 +27,8 @@ const SidePanel:React.FC = () => {
 	const [starTwoDisplay, setStarTwoDisplay] = useState({ display: 'block' });
 	const [starThreeDisplay, setStarThreeDisplay] = useState({ display: 'none' });
 	const [starFourDisplay, setStarFourDisplay] = useState({ display: 'none' });
+
+	
 
 	const homePage = () => {
 		setHome('sidepanel_menu_active');
@@ -119,21 +125,46 @@ const SidePanel:React.FC = () => {
 		setStarThreeDisplay({ display: 'block' });
 		setStarFourDisplay({ display: 'block' });
 	}
+
+	useEffect(() => {
+		if (activePage === 1) {
+			homePage();
+		} else if (activePage === 2) {
+			factionPage();
+		} else if (activePage === 3) {
+			roadmapPage();
+		} else if (activePage === 4) {
+			faqPage();
+		} else if (activePage === 5) {
+			teamPage();
+		} 
+	}, [home, factions, roadmap, faq, team])
 	
 
 	return (
 		<div className="sidepanel">
 			<div className="sidepanel_menu">
 				<ul>
-					<li onClick={homePage} style={homeDisplay} className={home}>Home</li>
+					<Link onClick={homePage}  to="/">
+						<li style={homeDisplay} className={home}>Home</li>
+					</Link >
 					<li style={starOneDisplay}><img src={star} alt="star" /></li>
-					<li onClick={factionPage} style={factionsDisplay} className={factions}>Factions</li>
+					<Link onClick={factionPage} to="/faction">
+						<li style={factionsDisplay} className={factions}>Factions</li>
+					</Link>
 					<li style={starTwoDisplay}><img src={star} alt="star" /></li>
-					<li onClick={roadmapPage} style={roadmapDisplay} className={roadmap}>Roadmap</li>
-					<li style={starThreeDisplay}><img src={star} alt="star" /></li>
-					<li onClick={faqPage} style={faqDisplay} className={faq}>FAQ</li>
+					<Link onClick={roadmapPage} to="/road">
+						<li style={roadmapDisplay} className={roadmap}>Roadmap</li>
+					</Link>
+						<li style={starThreeDisplay}><img src={star} alt="star" /></li>
+					<Link onClick={faqPage} to="/faq">
+						<li style={faqDisplay} className={faq}>FAQ</li>
+					</Link>
 					<li style={starFourDisplay}><img src={star} alt="star" /></li>
-					<li onClick={teamPage} style={teamDisplay} className={team}>Team</li>
+					<Link onClick={teamPage} to="/team">
+						<li style={teamDisplay} className={team}>Team</li>
+					</Link>
+
 				</ul>
 			</div>
 		</div>

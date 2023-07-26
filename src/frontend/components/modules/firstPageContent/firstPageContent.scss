@@ -10,6 +10,10 @@ $size-border: 2px;
 	height: 174px;
 	left: 50%;
 	transform: translateX(-50%);
+	a {
+			text-decoration: none;
+			color: inherit;
+		}
 	&_title {
 		color: #FFF;
 		font-family: 'TTOctosquares';
@@ -18,6 +22,7 @@ $size-border: 2px;
 		font-weight: 400;
 		line-height: normal;
 		letter-spacing: 24.09px;
+		text-align: center;
 	}
 	&_btnBox {
 		display: flex;

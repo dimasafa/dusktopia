@@ -2,22 +2,9 @@ import './factionsMenu.scss';
 import '../../../fonts/fonts.css';
 
 import { useState, CSSProperties } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import colorLeft from '../../../resources/factionMenu/color_left_border.png';
-import colorRight from '../../../resources/factionMenu/color_right_border.png';
-import whiteLeft from '../../../resources/factionMenu/white_left_border.png';
-import whiteRight from '../../../resources/factionMenu/white_right_border.png';
-
-import bild_1 from '../../../resources/factionMenu/bild_1.jpg';
-import bild_2 from '../../../resources/factionMenu/bild_2.jpg';
-import bild_3 from '../../../resources/factionMenu/bild_3.jpg';
-import bild_4 from '../../../resources/factionMenu/bild_4.jpg';
-
-import buttenOne from '../../../resources/factionMenu/btnOne.png';
-import buttenTwo from '../../../resources/factionMenu/btnTwo.png';
-import buttenThree from '../../../resources/factionMenu/btnThree.png';
-import buttenFour from '../../../resources/factionMenu/btnFour.png';
-
+import {colorLeft, colorRight, whiteLeft, whiteRight, bild_1, bild_2, bild_3, bild_4, buttenOne, buttenTwo, buttenThree, buttenFour} from './factionMenuImagePath';
 
 const FactionsMenu:React.FC = () => {
 
@@ -201,45 +188,68 @@ const FactionsMenu:React.FC = () => {
 		});
 	}
 
+	const navigate = useNavigate();
+
+	const handleClick = (value:number) => {
+		navigate('/more', { state: { activeMore: value } });
+	};
+
 	return (
-		<div className="menu">
-			<div className="menu_left">
-				<div style={bildDisplayOne.margin} className="menu_left_blockOne">
-					<div style={bildDisplayOne.tltle as CSSProperties} onClick={clickOne} className="menu_left_blockOne_title">Blighted Badlands</div>
-					<img style={bildDisplayOne.img} className='menu_left_blockOne_bild' src={bild_1} alt="bildBadlands" />
-					<img src={buttenOne} alt="ButtenMore" style={bildDisplayOne.btn} className="menu_left_blockOne_button">
+		<div className="menuF">
+			<div className="menuF_left">
+				<div style={bildDisplayOne.margin} className="menuF_left_blockOne">
+					<div style={bildDisplayOne.tltle as CSSProperties} onClick={clickOne} className="menuF_left_blockOne_title">Blighted Badlands</div>
+					<img style={bildDisplayOne.img} className='menuF_left_blockOne_bild' src={bild_1} alt="bildBadlands" />
+
+					<img src={buttenOne} alt="ButtenMore" 
+					style={bildDisplayOne.btn} className="menuF_left_blockOne_button"
+					onClick={() => handleClick(1)}
+					>
+					</img>
+
+				</div>
+				<div style={bildDisplayTwo.margin} className="menuF_left_blockTwo">
+					<div onClick={clickTwo} style={bildDisplayTwo.tltle as CSSProperties} className="menuF_left_blockTwo_title">Glacial Frontier</div>
+					<img style={bildDisplayTwo.img} className='menuF_left_blockTwo_bild' src={bild_2} alt="bildGlacial" />
+
+					<img src={buttenTwo} 
+					alt="ButtenMore" 
+					style={bildDisplayTwo.btn} className="menuF_left_blockTwo_button"
+					onClick={() => handleClick(2)}>
 					</img>
 				</div>
-				<div style={bildDisplayTwo.margin} className="menu_left_blockTwo">
-					<div onClick={clickTwo} style={bildDisplayTwo.tltle as CSSProperties} className="menu_left_blockTwo_title">Glacial Frontier</div>
-					<img style={bildDisplayTwo.img} className='menu_left_blockTwo_bild' src={bild_2} alt="bildGlacial" />
-					<img src={buttenTwo} alt="ButtenMore" style={bildDisplayTwo.btn} className="menu_left_blockTwo_button">
+				<div  style={bildDisplayThree.margin} className="menuF_left_blockThree">
+					<div onClick={clickThree} style={bildDisplayThree.tltle as CSSProperties}className="menuF_left_blockThree_title">Sundered Grove</div>
+					<img style={bildDisplayThree.img} className='menuF_left_blockThree_bild' src={bild_3} alt="bildSundered" />
+
+					<img src={buttenThree} 
+					alt="ButtenMore" 
+					style={bildDisplayThree.btn} className="menuF_left_blockThree_button"
+					onClick={() => handleClick(3)}>
 					</img>
 				</div>
-				<div  style={bildDisplayThree.margin} className="menu_left_blockThree">
-					<div onClick={clickThree} style={bildDisplayThree.tltle as CSSProperties}className="menu_left_blockThree_title">Sundered Grove</div>
-					<img style={bildDisplayThree.img} className='menu_left_blockThree_bild' src={bild_3} alt="bildSundered" />
-					<img src={buttenThree} alt="ButtenMore" style={bildDisplayThree.btn} className="menu_left_blockThree_button">
-					</img>
-				</div>
-				<div className="menu_left_blockFour">
-					<div onClick={clickFour} style={bildDisplayFour.tltle as CSSProperties} className="menu_left_blockFour_title">Sky Citadel</div>
-					<img style={bildDisplayFour.img} className='menu_left_blockFour_bild' src={bild_4} alt="bildSky" />
-					<img src={buttenFour} alt="ButtenMore" style={bildDisplayFour.btn} className="menu_left_blockFour_button">
+				<div className="menuF_left_blockFour">
+					<div onClick={clickFour} style={bildDisplayFour.tltle as CSSProperties} className="menuF_left_blockFour_title">Sky Citadel</div>
+					<img style={bildDisplayFour.img} className='menuF_left_blockFour_bild' src={bild_4} alt="bildSky" />
+
+					<img src={buttenFour} 
+					alt="ButtenMore" 
+					style={bildDisplayFour.btn} className="menuF_left_blockFour_button"
+					onClick={() => handleClick(4)}>
 					</img>
 				</div>
 			</div>
-			<div className="menu_right">
-				<img onClick={clickOne} className="menu_right_knofpOne" src={btnOne} alt="buttonOne" />
-				<div style={bildDisplayOne.line} className="menu_right_lineOne"></div>
+			<div className="menuF_right">
+				<img onClick={clickOne} className="menuF_right_knofpOne" src={btnOne} alt="buttonOne" />
+				<div style={bildDisplayOne.line} className="menuF_right_lineOne"></div>
 
-				<img onClick={clickTwo} className="menu_right_knofpTwo" src={btnTwo} alt="buttonTwo" />
-				<div style={bildDisplayTwo.line} className="menu_right_lineTwo"></div>
+				<img onClick={clickTwo} className="menuF_right_knofpTwo" src={btnTwo} alt="buttonTwo" />
+				<div style={bildDisplayTwo.line} className="menuF_right_lineTwo"></div>
 
-				<img onClick={clickThree} className="menu_right_knofpThree" src={btnThree} alt="buttonThree" />
-				<div style={bildDisplayThree.line} className="menu_right_lineThree"></div>
+				<img onClick={clickThree} className="menuF_right_knofpThree" src={btnThree} alt="buttonThree" />
+				<div style={bildDisplayThree.line} className="menuF_right_lineThree"></div>
 
-				<img onClick={clickFour} className="menu_right_knofpFour" src={btnFour} alt="buttonFour" />
+				<img onClick={clickFour} className="menuF_right_knofpFour" src={btnFour} alt="buttonFour" />
 			</div>
 		</div>
 	)

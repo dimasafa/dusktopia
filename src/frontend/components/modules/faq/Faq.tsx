@@ -1,13 +1,7 @@
 import './faq.scss';
 import '../../../fonts/fonts.css';
 
-import one from '../../../resources/faq/one.png';
-import two from '../../../resources/faq/two.png';
-import three from '../../../resources/faq/three.png';
-import four from '../../../resources/faq/four.png';
-import five from '../../../resources/faq/five.png';
-import six from '../../../resources/faq/six.png';
-import seven from '../../../resources/faq/seven.png';
+import { one, two, three, four, five, six, seven } from './FaqImagePath';
 
 const Faq:React.FC = () => {
 	return(

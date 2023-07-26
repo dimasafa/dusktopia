@@ -11,7 +11,7 @@ const FactionPage:React.FC = () => {
 		<div className="factionPage">
 			<div className="factionPage_title">FACTIONS</div>
 			<div className="factionPage_sideMenu">
-				<SideMenu />
+				<SideMenu activePage={2} />
 			</div>
 			<div className="factionPage_factionMenu">
 				<FactionsMenu />

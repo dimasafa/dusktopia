@@ -1,0 +1,60 @@
+.teamPage {
+	display: block;
+	background: url('../../../resources/teamPage/bg.png') center center/cover no-repeat;
+	&_logo {
+		padding-top: 80px;
+		&_text {
+			text-align: center;
+			font-family: 'Mazzard';
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+			background: var(--gradient, linear-gradient(90deg, #FFB800 0%, #FFBAC3 70.62%));
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&_img {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&_title {
+		color: #FFF;
+		text-align: center;
+		font-family: 'TTOctosquares';
+		font-size: 64px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100%;
+		letter-spacing: 13.44px;
+		margin-top: 34px;
+		&_lineOne {
+			display: flex;
+			justify-content: center;
+		}
+		&_lineTwo {
+			display: flex;
+			justify-content: center;
+			img {
+				height: 44px;
+				width: 71px;
+				margin-top: 10px;
+				margin-left: 10px;
+				margin-right: 15px;
+
+			}
+		}
+	}
+/* 	&_sidePanel {
+		position: absolute;
+		top: 170px;
+	} */
+	&_team {
+		margin-top: 103px;
+	}
+	&_footer {
+		margin-top: 161px;
+	}
+}

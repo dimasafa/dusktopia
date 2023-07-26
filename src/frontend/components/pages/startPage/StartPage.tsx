@@ -16,7 +16,7 @@ const StartPage:React.FC = () => {
 				<Content />
 			</div>
 			<div className="startPage_sideMenu">
-				<SideMenu />
+				<SideMenu activePage={1} />
 			</div>
 		</div>
 	)

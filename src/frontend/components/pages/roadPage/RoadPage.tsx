@@ -68,7 +68,7 @@ const RoadPage:React.FC = () => {
 				<div className="roadPage_text_textRight">MAP</div>
 			</div>
 			<div className="roadPage_sidePanel">
-				<SidePanel />
+				<SidePanel activePage={3} />
 			</div>
 			<div className="roadPage_roadMenu">
 				<RoadmapMenu onChangeState={setBg}/>

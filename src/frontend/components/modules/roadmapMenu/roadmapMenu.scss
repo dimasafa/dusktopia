@@ -3,7 +3,7 @@ $size-top: 1.8571rem;
 $size-bottom: 2.4286rem;
 $size-border: 2px;
 
-.menu {
+.menuR {
 	display: flex;
 	margin-top: 100px;
 	margin-left: 175px;
@@ -113,15 +113,15 @@ $size-border: 2px;
 					background: white;
 				}
 	
-				.menu_right_buttonOne_body, .menu_right_buttonTwo_body, .menu_right_buttonThree_body, .menu_right_buttonFour_body, .menu_right_buttonFive_body {
+				.menuR_right_buttonOne_body, .menuR_right_buttonTwo_body, .menuR_right_buttonThree_body, .menuR_right_buttonFour_body, .menuR_right_buttonFive_body {
 					color: black;
 				}
 	
-				.menu_right_buttonOne_tr1, .menu_right_buttonTwo_tr1, .menu_right_buttonThree_tr1, .menu_right_buttonFour_tr1, .menu_right_buttonFive_tr1 {
+				.menuR_right_buttonOne_tr1, .menuR_right_buttonTwo_tr1, .menuR_right_buttonThree_tr1, .menuR_right_buttonFour_tr1, .menuR_right_buttonFive_tr1 {
 					border-top-color: black;
 				}
 	
-				.menu_right_buttonOne_tr2, .menu_right_buttonTwo_tr2, .menu_right_buttonThree_tr2, .menu_right_buttonFour_tr2, .menu_right_buttonFive_tr2 {
+				.menuR_right_buttonOne_tr2, .menuR_right_buttonTwo_tr2, .menuR_right_buttonThree_tr2, .menuR_right_buttonFour_tr2, .menuR_right_buttonFive_tr2 {
 					border-top-color: black;
 				}
 			}

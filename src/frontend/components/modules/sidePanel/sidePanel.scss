@@ -5,6 +5,10 @@
 	height: auto;
 	left: -100px;
 	top: 410px;
+	a {
+		text-decoration: none;
+		color: inherit;
+		}
 	&_menu {
 		transform: rotate(90deg);
 
