@@ -1,9 +1,11 @@
 .roadPage {
 	display: block;
-	height: auto;
+	min-height: auto;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+
 	&_logo {
 		height: 28px;
 		width: 160px;
@@ -43,8 +45,63 @@
 			margin-top: 19px;
 		}
 	}
-/* 	&_sidePanel {
-	position: absolute;
-	top: 300px;
-	} */
+}
+
+@media (max-width: 767px) {
+	.roadPage {
+		&_logo {
+			transform: scale(0.8);
+			margin-left: 160px;
+			padding-top: 80px;
+		} 
+		&_text {
+			margin-top: 8px;
+			&_textLeft,
+			&_textRight {
+				color: #FFF;
+				font-family: 'TTOctosquares';
+				font-size: 35px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 23.36px;
+			}
+
+			img {
+				height: 25px;
+				margin-top: 10px;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.roadPage {
+		&_logo {
+			margin-left: 10px;
+			padding-top: 100px;
+		}
+
+		&_text {
+			margin-top: 15px;
+			margin-left: 20px;
+			&_textLeft,
+			&_textRight {
+				color: #FFF;
+				font-family: 'TTOctosquares';
+				font-size: 35px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				letter-spacing: 8.4px;
+			}
+
+			img {
+				height: 25px;
+				margin-top: 8px;
+				margin-right: 10px;
+			}
+		}
+	}
 }

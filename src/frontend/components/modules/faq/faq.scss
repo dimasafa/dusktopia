@@ -481,3 +481,209 @@ $size-border: 2px;
 		}
 	}
 }
+
+@media (max-width: 1600px) {
+	.faq {
+		transform: scale(0.9);
+		margin: 0 auto;
+		left: 0;
+		margin-left: 150px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.faq {
+		transform: scale(0.8);
+		margin: 0 auto;
+		left: 0;
+		margin-left: 100px;
+		/* margin-top: -100px; */
+	}
+}
+
+@media (max-width: 1250px) {
+	.faq {
+		transform: scale(0.7);
+		margin-left: 0px;
+		margin-top: -100px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.faq {
+		transform: scale(0.65);
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+}
+
+@media (max-width: 991px) {
+	.faq {
+		transform: scale(1.3);
+		&_button {
+			height: auto;
+			width: 370px;
+	
+			&_body {
+				display: block;
+	
+				&_lineOne,
+				&_lineTwo,
+				&_lineThree {
+					width: 112%;
+				}
+	
+				&_lineOne {
+					margin-top: -12px;
+					margin-left: -25px;
+	
+					&_second {
+						display: flex;
+						width: 100%;
+						height: 55px;
+						border-bottom: #FFF 3px solid;
+						&_left {
+							width: 25%;
+						}
+						&_center {
+							width: 40%;
+						}
+						&_right {
+							width: 35%;
+						}
+					}
+					&_third {
+						height: 290px;
+					}
+				}
+	
+				&_lineTwo {
+					margin-left: -25px;
+					&_first {
+						border-bottom: #FFF 3px solid;
+						border-top: #FFF 3px solid;
+						border-left: #FFF 0px solid;
+					}
+	
+					&_second {
+						border-bottom: #FFF 3px solid;
+						border-left: #FFF 0px solid;
+					}
+	
+					&_third {
+						border-bottom: #FFF 3px solid;
+						border-left: #FFF 0px solid;
+					}
+	
+					&_fourth {
+						&_left {
+							width: 40%;
+							border-left: #FFF 0px solid;
+							border-right: #FFF 3px solid;
+							border-bottom: #FFF 3px solid;
+						}
+						&_right {
+							width: 60%;
+							border-bottom: #FFF 3px solid;
+						}
+					}
+				}
+				&_lineThree {
+					margin-top: 0px;
+					margin-right: 0px;
+					margin-left: -30px;
+					&_first {
+						border-left: #FFF 0px solid;
+						border-bottom: #FFF 3px solid;
+					}
+					&_second {
+						border-left: #FFF 0px solid;
+						border-bottom: #FFF 3px solid;
+					}
+					&_third {
+						border-left: #FFF 0px solid;
+					}
+				}
+			}
+	
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+				transition: all 0.3s;
+				transform: scaleX(-1);
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+	
+						0 calc(100% - $size-border - $size-height),
+						calc($size-top + 1px) calc(100% - $size-border - $size-height),
+						calc($size-bottom + 1px) calc(100% - $size-border),
+						calc(100% - $size-border) calc(100% - $size-border),
+						calc(100% - $size-border) $size-border,
+						calc(100% - $size-top + $size-border - 1px) calc($size-border),
+						calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+						$size-border calc($size-height + $size-border),
+						$size-border calc(100% - $size-border - $size-height),
+						0 calc(100% - $size-border - $size-height));
+				background: rgb(124, 124, 124);
+			}
+	
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				display: block;
+				z-index: 0;
+				transition: all 0.3s;
+				transform: scaleX(-1);
+				clip-path: polygon(0 $size-height,
+						calc(100% - $size-bottom) $size-height,
+						calc(100% - $size-top) 0,
+						100% 0,
+						100% 100%,
+						$size-bottom 100%,
+						$size-top calc(100% - $size-height),
+						0 calc(100% - $size-height),
+					);
+			}
+		}
+		margin-left: 350px;
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 767px) {
+	.faq {
+		transform: scale(1);
+		&_button {
+			margin-left: -250px;
+			
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.faq {
+		margin-top: -100px;
+		transform: scale(0.68);
+
+		&_button {
+			margin-left: -64%;
+			margin-top: 0px;
+		}
+	}
+}

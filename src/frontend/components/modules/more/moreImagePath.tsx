@@ -6,6 +6,10 @@ import titleOne from '../../../resources/more/titleOne.png';
 import titleTwo from '../../../resources/more/titleTwo.png';
 import titleThree from '../../../resources/more/titleThree.png';
 import titleFour from '../../../resources/more/titleFour.png';
+import titleTwoMob from '../../../resources/more/titleTwo_mobile.png';
+import titleThreeMob from '../../../resources/more/titleThree_mobile.png';
+import titleFourMob from '../../../resources/more/titleFour_mobile.png';
+import kreuz from '../../../resources/more/kreuz.png';
 
 import bgOne from '../../../resources/more/bg01.png';
 import bgTwo from '../../../resources/more/bg02.png';
@@ -46,6 +50,7 @@ import itemFour07 from '../../../resources/more/04_03.png';
 import itemFour08 from '../../../resources/more/04_04.png';
 
 export {
+kreuz,
 button,
 buttonwhite,
 arrow,
@@ -53,6 +58,9 @@ titleOne,
 titleTwo,
 titleThree,
 titleFour,
+titleTwoMob,
+titleThreeMob,
+titleFourMob,
 bgOne,
 bgTwo,
 bgThree,

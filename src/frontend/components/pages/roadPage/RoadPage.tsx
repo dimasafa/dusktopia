@@ -14,6 +14,7 @@ import icon from '../../../resources/roadPage//icon.png';
 
 import SidePanel from '../../modules/sidePanel/SidePanel';
 import RoadmapMenu from '../../modules/roadmapMenu/RoadmapMenu';
+import MobileMenu from '../../modules/mobileMenu/MobileMenu';
 
 
 const RoadPage:React.FC = () => {
@@ -58,6 +59,9 @@ const RoadPage:React.FC = () => {
 
 	return (
 		<div className="roadPage" style={activeBg.bg}>
+			<div className="roadPage_mobileMenu">
+				<MobileMenu />
+			</div>
 			<div className="roadPage_logo">
 				<div className="roadPage_logo_text">OUR WAY</div>
 				<img src={line} alt="line" />

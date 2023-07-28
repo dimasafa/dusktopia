@@ -7,11 +7,15 @@ import icon from '../../../resources/teamPage/icon.png';
 import SidePanel from '../../modules/sidePanel/SidePanel';
 import Team from '../../modules/team/Team';
 import Footer from '../../modules/footer/Footer';
+import MobileMenu from '../../modules/mobileMenu/MobileMenu';
 
 
 const TeamPage:React.FC = () => {
 	return(
 		<div className="teamPage">
+			<div className="teamPage_mobileMenu">
+				<MobileMenu />
+			</div>
 			<div className="teamPage_logo">
 				<div className="teamPage_logo_text">MEMBERS</div>
 				<div className="teamPage_logo_img">

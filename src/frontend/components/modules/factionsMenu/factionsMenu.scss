@@ -69,3 +69,38 @@ $size-border: 2px;
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.menuF {
+		display: flex;
+		padding-top: 140px;
+		justify-content: end;
+		margin-right: 100px;
+
+		&_left {
+			margin-top: 20px;
+			transform: scale(0.8);
+
+			&_blockOne,
+			&_blockTwo,
+			&_blockThree,
+			&_blockFour {
+				font-size: 21px;
+				margin-right: -20px;
+
+
+				&_button {
+					position: absolute;
+					top: 190px;
+					left: 50px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		&_right {
+			transform: scale(0.8);
+			margin-top: -15px;
+		}
+	}
+}

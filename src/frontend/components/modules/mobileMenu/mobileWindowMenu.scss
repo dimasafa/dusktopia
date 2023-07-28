@@ -1,0 +1,90 @@
+.mobileWin {
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	&_window {
+		display: block;
+		background: url('../../../resources/menu/bg_mobile.png') center center/cover no-repeat;
+		height: 100vh;
+		transition: all 0.5s;
+
+		&_menu {
+			display: flex;
+			width: 80%;
+			justify-content: space-between;
+			padding-top: 35px;
+			margin-left: 10%;
+		}
+
+		&_box {
+			display: flex;
+			justify-content: center;
+			margin-top: 90px;
+
+			&_list {
+				li {
+					list-style-type: none;
+					color: rgba(255, 255, 255, 0.56);
+					text-align: center;
+					font-family: 'Neue Machina';
+					font-size: 30px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 100%;
+					cursor: pointer;
+
+					&:hover {
+						color: white;
+						transition: all 0.4s;
+					}
+				}
+
+				img {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					transform: scale(0.5);
+					filter: invert(20%);
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		&_icon {
+			display: flex;
+			justify-content: center;
+			margin-top: 80px;
+
+			&_iconBox {
+				display: flex;
+				width: 178px;
+				justify-content: space-between;
+
+				&_disc,
+				&_twit {
+					margin-top: 5px;
+				}
+
+				&_disc,
+				&_twit,
+				&_med {
+					cursor: pointer;
+				}
+
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.mobileWin {
+		display: block;
+
+		&_window {
+			display: block;
+		}
+	}
+
+}

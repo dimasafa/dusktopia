@@ -138,7 +138,7 @@ const SidePanel:React.FC<IActivePage> = ({activePage}) => {
 		} else if (activePage === 5) {
 			teamPage();
 		} 
-	}, [home, factions, roadmap, faq, team])
+	}, [activePage])
 	
 
 	return (

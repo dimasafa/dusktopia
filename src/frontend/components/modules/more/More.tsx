@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { textFirstPage, textSecondPage, textThirdPage, textFourPage } from './moreVariables';
 
-import { button, buttonwhite, arrow, titleOne, titleTwo, titleThree, titleFour, bgOne, bgTwo, bgThree, bgFour, itemOne01, itemOne02, itemOne03, itemOne04, itemOne05, itemOne06, itemOne07, itemOne08, itemTwo01, itemTwo02, itemTwo03, itemTwo04, itemTwo05, itemTwo06, itemTwo07, itemTwo08, itemThree01, itemThree02, itemThree03, itemThree04, itemThree05, itemThree06, itemThree07, itemThree08, itemFour01, itemFour02, itemFour03, itemFour04, itemFour05, itemFour06, itemFour07, itemFour08 } from './moreImagePath';
+import { kreuz,button, buttonwhite, arrow, titleOne, titleTwo, titleThree, titleFour, bgOne, bgTwo, bgThree, bgFour, itemOne01, itemOne02, itemOne03, itemOne04, itemOne05, itemOne06, itemOne07, itemOne08, itemTwo01, itemTwo02, itemTwo03, itemTwo04, itemTwo05, itemTwo06, itemTwo07, itemTwo08, itemThree01, itemThree02, itemThree03, itemThree04, itemThree05, itemThree06, itemThree07, itemThree08, itemFour01, itemFour02, itemFour03, itemFour04, itemFour05, itemFour06, itemFour07, itemFour08, titleTwoMob, titleThreeMob, titleFourMob } from './moreImagePath';
 
 import { ScrollbarRefs } from './moreInterfaces';
 
@@ -54,7 +54,8 @@ const More:React.FC = (props) => {
 			setPosSix(itemOne06);
 			setPosSeven(itemOne07);
 			setPosEight(itemOne08);
-		} else if (activePage === 2) {
+			
+		} else if (activePage === 2 && window.innerWidth > 575) {
 			setActiveBg({
 				background: {backgroundImage: `url(${bgTwo})`}
 			})
@@ -68,7 +69,21 @@ const More:React.FC = (props) => {
 			setPosSix(itemTwo06);
 			setPosSeven(itemTwo07);
 			setPosEight(itemTwo08);
-		} else if (activePage === 3) {
+		} else if (activePage === 2 && window.innerWidth <= 575) {
+			setActiveBg({
+				background: {backgroundImage: `url(${bgTwo})`}
+			})
+			setActiveTitle(titleTwoMob);
+			setActiveText(textSecondPage);
+			setPosOne(itemTwo01);
+			setPosTwo(itemTwo02);
+			setPosThree(itemTwo03);
+			setPosFour(itemTwo04);
+			setPosFive(itemTwo05);
+			setPosSix(itemTwo06);
+			setPosSeven(itemTwo07);
+			setPosEight(itemTwo08);
+		} else if (activePage === 3 && window.innerWidth > 575) {
 			setActiveBg({
 				background: {backgroundImage: `url(${bgThree})`}
 			})
@@ -82,11 +97,39 @@ const More:React.FC = (props) => {
 			setPosSix(itemThree06);
 			setPosSeven(itemThree07);
 			setPosEight(itemThree08);
-		} else if (activePage === 4) {
+		} else if (activePage === 3 && window.innerWidth <= 575) {
+			setActiveBg({
+				background: {backgroundImage: `url(${bgThree})`}
+			})
+			setActiveTitle(titleThreeMob);
+			setActiveText(textThirdPage);
+			setPosOne(itemThree01);
+			setPosTwo(itemThree02);
+			setPosThree(itemThree03);
+			setPosFour(itemThree04);
+			setPosFive(itemThree05);
+			setPosSix(itemThree06);
+			setPosSeven(itemThree07);
+			setPosEight(itemThree08);
+		} 	else if (activePage === 4 && window.innerWidth > 575) {
 			setActiveBg({
 				background: {backgroundImage: `url(${bgFour})`}
 			})
 			setActiveTitle(titleFour);
+			setActiveText(textFourPage);
+			setPosOne(itemFour01);
+			setPosTwo(itemFour02);
+			setPosThree(itemFour03);
+			setPosFour(itemFour04);
+			setPosFive(itemFour05);
+			setPosSix(itemFour06);
+			setPosSeven(itemFour07);
+			setPosEight(itemFour08);
+		} else if (activePage === 4 && window.innerWidth <= 575) {
+			setActiveBg({
+				background: {backgroundImage: `url(${bgFour})`}
+			})
+			setActiveTitle(titleFourMob);
 			setActiveText(textFourPage);
 			setPosOne(itemFour01);
 			setPosTwo(itemFour02);
@@ -165,7 +208,11 @@ const More:React.FC = (props) => {
 		<div className="more" style={activeBg.background}>
 			<div className="more_buttonBox">
 				<Link to='/faction'>
+					
 					<div className="more_buttonBox_buttonLeft">
+						<div className="more_buttonBox_buttonLeft_kreuz">
+							<img src={kreuz} alt="kreuz" />
+						</div>
 						<span className="more_buttonBox_buttonLeft_body">Close</span>
 					</div>
 				</Link>

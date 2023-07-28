@@ -9,6 +9,7 @@ import RoadPage from '../pages/roadPage/RoadPage';
 import Faq from '../pages/faqPage/FaqPage';
 import Team from '../pages/teamPage/TeamPage';
 import More from '../modules/more/More';
+import MobileWindowMenu from '../modules/mobileMenu/MobileWindowMenu';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='faq' element={<Faq />}></Route>
           <Route path='team' index element={<Team />}></Route>
           <Route path='more' element={<More />}></Route>
+          <Route path='mob' element={<MobileWindowMenu />}></Route>
         </Routes>
       </Router>
     </div>

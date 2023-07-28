@@ -1,6 +1,7 @@
 .teamPage {
 	display: block;
 	background: url('../../../resources/teamPage/bg.png') center center/cover no-repeat;
+	width: 100vw;
 	&_logo {
 		padding-top: 80px;
 		&_text {
@@ -47,10 +48,6 @@
 			}
 		}
 	}
-/* 	&_sidePanel {
-		position: absolute;
-		top: 170px;
-	} */
 	&_team {
 		margin-top: 103px;
 	}
@@ -58,3 +55,65 @@
 		margin-top: 161px;
 	}
 }
+
+@media (max-width: 1350px) {
+	.teamPage {
+		&_team {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.teamPage {
+		&_logo {
+			transform: scale(0.9);
+		}
+		&_title {
+			transform: scale(0.9);
+		}
+		&_team {
+			margin-top: 30px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.teamPage {
+		overflow: hidden;
+		&_logo {
+			transform: scale(0.7);
+		}
+
+		&_title {
+			transform: scale(0.7);
+			margin-top: 0;
+		}
+
+		&_team {
+			margin-top: 0px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.teamPage {
+		padding-top: 50px;
+		&_mobileMenu {
+			padding-top: 1px;
+		}
+		&_logo {
+			padding-top: 50px;
+		}
+		&_title {
+			transform: scale(0.42);
+			margin-top: -20px;
+		}
+
+		&_team {
+			margin-top: -150px;
+		}
+		
+	}
+}
+

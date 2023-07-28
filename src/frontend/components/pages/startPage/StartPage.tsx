@@ -3,7 +3,7 @@ import './startPage.scss';
 import Menu from '../../modules/menu/Menu';
 import Content from '../../modules/firstPageContent/FirstPageContent';
 import SideMenu from '../../modules/sidePanel/SidePanel';
-
+import MobileMenu from '../../modules/mobileMenu/MobileMenu';
 
 
 const StartPage:React.FC = () => {
@@ -11,6 +11,9 @@ const StartPage:React.FC = () => {
 		<div className="startPage">
 			<div className="startPage_menu">
 				<Menu />
+			</div>
+			<div className="startPage_mobile">
+				<MobileMenu />
 			</div>
 			<div className="startPage_content">
 				<Content />

@@ -8,3 +8,19 @@
 		
 	}
 }
+
+@media (max-width: 767px) {
+	.startPage {
+		&_content {
+			margin-top: 250px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.startPage {
+		&_content {
+			margin-top: 130px;
+		}
+	}
+}

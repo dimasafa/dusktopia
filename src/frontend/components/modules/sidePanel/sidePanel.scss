@@ -8,7 +8,7 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		}
+	}
 	&_menu {
 		transform: rotate(90deg);
 
@@ -36,5 +36,26 @@
 		&_active {
 			color: #fff;
 		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.sidepanel {
+		left: -130px;
+	}
+}
+
+@media (max-width: 767px) {
+	.sidepanel {
+		left: -150px;
+		&_menu {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.sidepanel {
+		display: none;
 	}
 }

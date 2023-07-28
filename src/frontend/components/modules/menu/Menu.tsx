@@ -24,7 +24,6 @@ const Menu:React.FC = () => {
 						<span className="menu_right_button_tr2"></span>
 					</div>
 				</Link>
-
 			</div>
 		</div>
 	)

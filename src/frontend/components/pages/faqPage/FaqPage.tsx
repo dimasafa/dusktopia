@@ -6,10 +6,14 @@ import line from '../../../resources/faqPage/line.png';
 
 import SidePanel from '../../modules/sidePanel/SidePanel';
 import Faq from '../../modules/faq/Faq';
+import MobileMenu from '../../modules/mobileMenu/MobileMenu';
 
 const FaqPage:React.FC = () => {
 	return(
 		<div className="faqPage">
+			<div className="faqPage_mobileMenu">
+				<MobileMenu />
+			</div>
 			<div className="faqPage_logobox">
 				<div className="faqPage_logobox_text">FAQ</div>
 				<div className="faqPage_logobox_img">

@@ -7,10 +7,13 @@ $size-border: 2px;
 	display: flex;
 	width: 95%;
 	justify-content: space-between;
+	&_mobile {
+		display: none;
+	}
 	a {
-			text-decoration: none;
-			color: inherit;
-		}
+		text-decoration: none;
+		color: inherit;
+	}
 	&_left {
 		margin-top: 55px;
 		margin-left: 80px;
@@ -174,4 +177,102 @@ $size-border: 2px;
 
 		}
 	}
+}
+
+@media (max-width: 1200px) {
+	.menu {
+		&_right {
+			&_button {
+				height: 12px;
+				width: 100px;
+				font-size: 14px;
+				&_tr1 {
+					margin-top: -44px;
+				}
+
+				&_tr2 {
+					margin-left: 113px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.menu {
+		&_left {
+			margin-left: 50px;
+			img {
+				transform: scale(0.8);
+			}
+		}
+
+		&_right {
+
+			&_icon {
+				width: 100px;
+				img {
+					position: relative;
+					height: fit-content;
+					cursor: pointer;
+					transform: scale(0.8);
+					&:hover {
+						transform: scale(0.9);
+						transition: all 0.6s ease-in-out;
+					}
+				}
+			}
+
+			&_button {
+				height: 8px;
+				width: 70px;
+				font-size: 12px;
+
+				&_tr1 {
+					margin-top: -40px;
+				}
+
+				&_tr2 {
+					margin-left: 83px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.menu {
+		&_left {
+			margin-top: 40px;
+			margin-left: 20px;
+			img {
+				transform: scale(0.8);
+			}
+		}
+
+		&_right {
+			display: none;
+		}
+		&_mobile {
+			display: block;
+			margin-top: 35px;
+			cursor: pointer;
+			&_lineOne, &_lineTwo, &_lineThree {
+				display: block;
+				width: 30.539px;
+				height: 2px;
+				background-color: #fff;
+				margin-left: auto;
+			}
+			&_lineTwo {
+				width: 17.305px;
+				margin-top: 8px;
+			}
+			&_lineThree {
+				width: 25.449px;
+				margin-top: 8px;
+			}
+		}
+	}
+
 }
