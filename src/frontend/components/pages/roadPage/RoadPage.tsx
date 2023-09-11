@@ -21,6 +21,7 @@ const RoadPage:React.FC = () => {
 
 	const [activeNum, setActiveNum] = useState(1);
 
+
 	const [activeBg, setActiveBg] = useState({
 		bg: {backgroundImage: `url(${bg01})`}
 	});
@@ -31,25 +32,34 @@ const RoadPage:React.FC = () => {
 
 	useEffect (() => {
 		if (activeNum === 1) {
+			
 			setActiveBg({
 				bg: {backgroundImage: `url(${bg01})`}
 			})
 		} else if (activeNum === 2) {
+			
 			setActiveBg({
 				bg: {backgroundImage: `url(${bg02})`}
 			})
+		
 		} else if (activeNum === 3) {
+			
 			setActiveBg({
 				bg: {backgroundImage: `url(${bg03})`}
 			})
+		
 		} else if (activeNum === 4) {
+			
 			setActiveBg({
 				bg: {backgroundImage: `url(${bg04})`}
 			})
+		
 		} else if (activeNum === 5) {
+			
 			setActiveBg({
 				bg: {backgroundImage: `url(${bg05})`}
 			})
+	
 		}
 
 	}, [activeNum]);
@@ -58,26 +68,30 @@ const RoadPage:React.FC = () => {
 
 
 	return (
-		<div className="roadPage" style={activeBg.bg}>
-			<div className="roadPage_mobileMenu">
-				<MobileMenu />
+		<>
+			<div className="roadPage" style={activeBg.bg}>
+				<div className="roadPage_mobileMenu">
+					<MobileMenu />
+				</div>
+
+					<div className="roadPage_logo">
+						<div className="roadPage_logo_text">OUR WAY</div>
+						<img src={line} alt="line" />
+					</div>
+					<div className="roadPage_text">
+						<div className="roadPage_text_textLeft">ROAD</div>
+						<img src={icon} alt="icon" />
+						<div className="roadPage_text_textRight">MAP</div>
+					</div>
+					<div className="roadPage_sidePanel">
+						<SidePanel activePage={3} />
+					</div>
+					<div className="roadPage_roadMenu">
+						<RoadmapMenu onChangeState={setBg}/>
+					</div>
 			</div>
-			<div className="roadPage_logo">
-				<div className="roadPage_logo_text">OUR WAY</div>
-				<img src={line} alt="line" />
-			</div>
-			<div className="roadPage_text">
-				<div className="roadPage_text_textLeft">ROAD</div>
-				<img src={icon} alt="icon" />
-				<div className="roadPage_text_textRight">MAP</div>
-			</div>
-			<div className="roadPage_sidePanel">
-				<SidePanel activePage={3} />
-			</div>
-			<div className="roadPage_roadMenu">
-				<RoadmapMenu onChangeState={setBg}/>
-			</div>
-		</div>
+		</>
+
 	)
 };
 

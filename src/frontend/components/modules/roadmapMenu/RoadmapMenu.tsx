@@ -1,7 +1,8 @@
 import './roadmapMenu.scss';
 import '../../../fonts/fonts.css';
 
-import { useState } from 'react';
+import { useEffect,  useState } from 'react';
+import Spinner from '../../modules/spinner/Spinner';
 
 import { colorLeft, colorRight, whiteLeft, whiteRight,one01, one02, one03, one04, one05, two01, two02, two03, two04, two05, three01, three02, three03, three04, three05, four01, four02, four03, four04, four05, five01, five02, five03, five04, five05 } from './roadMapMenuImagePath';
 
@@ -11,6 +12,17 @@ interface RoadmapMenuProps {
 
 
 const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
+
+/* 	const [loading, setLoading] = useState(true);
+	const dauer = 1500;
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+		setLoading(false);
+		}, dauer);
+
+		return () => clearTimeout(timer);
+	}, [loading]); */
 
 	const [btnOne, setBtnOne] = useState(whiteLeft);
 	const [btnTwo, setBtnTwo] = useState(whiteRight);
@@ -51,6 +63,7 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 		setBtnThree(whiteLeft);
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
+/* 		setLoading(true); */
 
 		onChangeState(1);
 
@@ -88,6 +101,7 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
 		onChangeState(2);
+/* 		setLoading(true); */
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -124,6 +138,7 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 		setBtnFour(whiteRight);
 		setBtnFive(whiteLeft);
 		onChangeState(3);
+/* 		setLoading(true); */
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -160,6 +175,7 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 		setBtnFour(colorRight);
 		setBtnFive(whiteLeft);
 		onChangeState(4);
+/* 		setLoading(true); */
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -196,6 +212,7 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 		setBtnFour(whiteRight);
 		setBtnFive(colorLeft);
 		onChangeState(5);
+/* 		setLoading(true); */
 
 		setDisplayOne({
 			menuScale: { transform: '', marginLeft:'' },
@@ -226,85 +243,92 @@ const RoadmapMenu:React.FC<RoadmapMenuProps> = ({ onChangeState }) => {
 	}
 
 	return(
-		<div className="menuR">
-			<div className="menuR_left">
-				<img onClick={oneClick} src={btnOne} alt="buttonOne" />
-				<div className="menuR_left_lineOne"></div>
-				<img onClick={twoClick} src={btnTwo} alt="buttonTwo" />
-				<div className="menuR_left_lineTwo"></div>
-				<img onClick={threeClick} src={btnThree} alt="buttonThree" />
-				<div className="menuR_left_lineThree"></div>
-				<img onClick={fourClick} src={btnFour} alt="buttonFour" />
-				<div className="menuR_left_lineFour"></div>
-				<img onClick={fiveClick} src={btnFive} alt="buttonFive" />
+		<>
+{/* 			{loading ? (
+				<Spinner />
+			) : ( */}
+			<div className="menuR">
+				<div className="menuR_left">
+					<img onClick={oneClick} src={btnOne} alt="buttonOne" />
+					<div className="menuR_left_lineOne"></div>
+					<img onClick={twoClick} src={btnTwo} alt="buttonTwo" />
+					<div className="menuR_left_lineTwo"></div>
+					<img onClick={threeClick} src={btnThree} alt="buttonThree" />
+					<div className="menuR_left_lineThree"></div>
+					<img onClick={fourClick} src={btnFour} alt="buttonFour" />
+					<div className="menuR_left_lineFour"></div>
+					<img onClick={fiveClick} src={btnFive} alt="buttonFive" />
+				</div>
+				<div className="menuR_right">
+					<div onClick={oneClick} style={displayOne.menuScale} className="menuR_right_buttonOne">
+						<span className="menuR_right_buttonOne_body">
+							<div className="menuR_right_buttonOne_body_num">01</div>
+							<div className="menuR_right_buttonOne_body_header">GENESIS LANDS DROP</div>
+							<div className="menuR_right_buttonOne_body_text">An original collection of 5,555 land plots will be made ready <br></br>
+							for the very first Dusktopian adventurers.</div>
+							<div style={displayOne.gradPosition} className="menuR_right_buttonOne_body_gradient">
+								<img src={displayOne.gradient} alt="gradient" />
+							</div>
+						</span>
+						<span className="menuR_right_buttonOne_tr1"></span>
+						<span className="menuR_right_buttonOne_tr2"></span>
+					</div>
+					<div onClick={twoClick} className="menuR_right_buttonTwo"  style={displayTwo.menuScale}>
+						<span className="menuR_right_buttonTwo_body">
+							<div className="menuR_right_buttonTwo_body_num">02</div>
+							<div className="menuR_right_buttonTwo_body_header">STAKING GOES LIVE</div>
+							<div className="menuR_right_buttonTwo_body_text">The EON Corporation Superbank begins rewarding <br></br>
+							Dusktopians staking their land plots with $DAWN. </div>
+							<div style={displayTwo.gradPosition} className="menuR_right_buttonTwo_body_gradient">
+								<img src={displayTwo.gradient} alt="gradient" />
+							</div>
+						</span>
+						<span className="menuR_right_buttonTwo_tr1"></span>
+						<span className="menuR_right_buttonTwo_tr2"></span>
+					</div>
+					<div onClick={threeClick} className="menuR_right_buttonThree" style={displayThree.menuScale}>
+						<span className="menuR_right_buttonThree_body">
+							<div className="menuR_right_buttonThree_body_num">03</div>
+							<div className="menuR_right_buttonThree_body_header">NEW WORLDS EMERGE</div>
+							<div className="menuR_right_buttonThree_body_text">Claim a slice of our secret land collection with $DAWN. <br></br>
+							Outfit your existing land with new properties and accessories.</div>
+							<div style={displayThree.gradPosition} className="menuR_right_buttonThree_body_gradient">
+								<img src={displayThree.gradient} alt="gradient" />
+							</div>
+						</span>
+						<span className="menuR_right_buttonThree_tr1"></span>
+						<span className="menuR_right_buttonThree_tr2"></span>
+					</div>
+					<div onClick={fourClick} className="menuR_right_buttonFour" style={displayFour.menuScale}>
+						<span className="menuR_right_buttonFour_body">
+							<div className="menuR_right_buttonFour_body_num">04</div>
+							<div className="menuR_right_buttonFour_body_header">AVATAR COLLECTION DROP</div>
+							<div className="menuR_right_buttonFour_body_text">Get the PFP avatars you will use for in-universe <br></br>
+							interaction, synergized with your asset holdings.</div>
+							<div style={displayFour.gradPosition} className="menuR_right_buttonFour_body_gradient">
+								<img src={displayFour.gradient} alt="gradient" />
+							</div>
+						</span>
+						<span className="menuR_right_buttonFour_tr1"></span>
+						<span className="menuR_right_buttonFour_tr2"></span>
+					</div>
+					<div onClick={fiveClick} className="menuR_right_buttonFive" style={displayFive.menuScale}>
+						<span className="menuR_right_buttonFive_body">
+							<div className="menuR_right_buttonFive_body_num">05</div>
+							<div className="menuR_right_buttonFive_body_header">LET THE GAMES BEGIN
+							</div>
+							<div style={displayFive.gradPosition} className="menuR_right_buttonFive_body_gradient">
+								<img src={displayFive.gradient} alt="gradient" />
+							</div>
+						</span>
+						<span className="menuR_right_buttonFive_tr1"></span>
+						<span className="menuR_right_buttonFive_tr2"></span>
+					</div>
+				</div>
 			</div>
-			<div className="menuR_right">
-				<div onClick={oneClick} style={displayOne.menuScale} className="menuR_right_buttonOne">
-					<span className="menuR_right_buttonOne_body">
-						<div className="menuR_right_buttonOne_body_num">01</div>
-						<div className="menuR_right_buttonOne_body_header">GENESIS LANDS DROP</div>
-						<div className="menuR_right_buttonOne_body_text">An original collection of 5,555 land plots will be made ready <br></br>
-						for the very first Dusktopian adventurers.</div>
-						<div style={displayOne.gradPosition} className="menuR_right_buttonOne_body_gradient">
-							<img src={displayOne.gradient} alt="gradient" />
-						</div>
-					</span>
-					<span className="menuR_right_buttonOne_tr1"></span>
-					<span className="menuR_right_buttonOne_tr2"></span>
-				</div>
-				<div onClick={twoClick} className="menuR_right_buttonTwo"  style={displayTwo.menuScale}>
-					<span className="menuR_right_buttonTwo_body">
-						<div className="menuR_right_buttonTwo_body_num">02</div>
-						<div className="menuR_right_buttonTwo_body_header">STAKING GOES LIVE</div>
-						<div className="menuR_right_buttonTwo_body_text">The EON Corporation Superbank begins rewarding <br></br>
-						Dusktopians staking their land plots with $DAWN. </div>
-						<div style={displayTwo.gradPosition} className="menuR_right_buttonTwo_body_gradient">
-							<img src={displayTwo.gradient} alt="gradient" />
-						</div>
-					</span>
-					<span className="menuR_right_buttonTwo_tr1"></span>
-					<span className="menuR_right_buttonTwo_tr2"></span>
-				</div>
-				<div onClick={threeClick} className="menuR_right_buttonThree" style={displayThree.menuScale}>
-					<span className="menuR_right_buttonThree_body">
-						<div className="menuR_right_buttonThree_body_num">03</div>
-						<div className="menuR_right_buttonThree_body_header">NEW WORLDS EMERGE</div>
-						<div className="menuR_right_buttonThree_body_text">Claim a slice of our secret land collection with $DAWN. <br></br>
-						Outfit your existing land with new properties and accessories.</div>
-						<div style={displayThree.gradPosition} className="menuR_right_buttonThree_body_gradient">
-							<img src={displayThree.gradient} alt="gradient" />
-						</div>
-					</span>
-					<span className="menuR_right_buttonThree_tr1"></span>
-					<span className="menuR_right_buttonThree_tr2"></span>
-				</div>
-				<div onClick={fourClick} className="menuR_right_buttonFour" style={displayFour.menuScale}>
-					<span className="menuR_right_buttonFour_body">
-						<div className="menuR_right_buttonFour_body_num">04</div>
-						<div className="menuR_right_buttonFour_body_header">AVATAR COLLECTION DROP</div>
-						<div className="menuR_right_buttonFour_body_text">Get the PFP avatars you will use for in-universe <br></br>
-						interaction, synergized with your asset holdings.</div>
-						<div style={displayFour.gradPosition} className="menuR_right_buttonFour_body_gradient">
-							<img src={displayFour.gradient} alt="gradient" />
-						</div>
-					</span>
-					<span className="menuR_right_buttonFour_tr1"></span>
-					<span className="menuR_right_buttonFour_tr2"></span>
-				</div>
-				<div onClick={fiveClick} className="menuR_right_buttonFive" style={displayFive.menuScale}>
-					<span className="menuR_right_buttonFive_body">
-						<div className="menuR_right_buttonFive_body_num">05</div>
-						<div className="menuR_right_buttonFive_body_header">LET THE GAMES BEGIN
-						</div>
-						<div style={displayFive.gradPosition} className="menuR_right_buttonFive_body_gradient">
-							<img src={displayFive.gradient} alt="gradient" />
-						</div>
-					</span>
-					<span className="menuR_right_buttonFive_tr1"></span>
-					<span className="menuR_right_buttonFive_tr2"></span>
-				</div>
-			</div>
-		</div>
+{/* 			)} */}
+		</>
+
 	)
 };
 
